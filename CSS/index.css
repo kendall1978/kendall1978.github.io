@@ -1,0 +1,56 @@
+body{
+
+    background-color: darkcyan;
+
+}
+
+a:link {
+
+    color:white;
+}
+
+a:hover {
+
+    color:darkblue;
+}
+#duh {
+
+    background-color: lightgray; 
+	
+            
+}
+
+.backgroundcolorPurple {
+
+    background-color: purple;
+
+}
+
+#links{
+
+    background-color: olivedrab;
+}
+
+#metalfingers {
+
+    margin: 0 300px 0;
+    padding: 1px;
+    width: 35%; 
+    border-style: ridge;
+    border-color: darkcyan;
+}
+
+#dump{
+
+    margin: 0 300px 0;
+    padding: 1px;
+    width: 35%;
+    border-style: ridge;
+    border-color: darkcyan;
+
+}
+
+ol{
+
+    list-style-type: square;
+}
