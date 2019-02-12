@@ -17,10 +17,7 @@
     src: url(DobkinPlain.woff) format("woff") url(DobkinPlain.ttf) format("ttf") ; 
     
 }
-@font-face {
-    font-family: Champagne;
-    src: url(cac_champagne.woff);
-  }
+
 
 
 
@@ -126,12 +123,12 @@ h1{
 #play1 {
 
     background-color: hsl(240, 100%, 88%);
-    font: Champagne, cursive; 
+    
 }
 
 #play1>h1 {
 
-    font: Champagne, cursive; 
+    font-style: Champagne, cursive; 
 }
 
 #play2 {
@@ -166,4 +163,18 @@ h1{
 
 
 /* Description List Styles */
+
+dt {
+
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.4)
+}
+
+dd {
+
+    font-size: 1.3em;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
 
