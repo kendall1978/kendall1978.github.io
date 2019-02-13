@@ -1,20 +1,20 @@
-@charset "UTF-8"
+@charset "UTF-8" ;
 
 @font-face {
-    font-family: Champagne;
-    src: url(cac_champagne.woff) format("woff") url(cac_champagne.ttf) format("ttf") ; 
+    font-family: Champagne ;
+    src: url("cac_champagne.woff") format('woff'), url("cac_champagne.ttf") format('ttf') ; 
     
 }
 
 @font-face {
     font-family: Grunge;
-    src: url(1942.woff) format("woff") url(1942.ttf) format("ttf") ; 
+    src: url("1942.woff") format("woff"), url("1942.ttf") format("truetype") ; 
     
 }
 
 @font-face {
     font-family: Dobkin;
-    src: url(DobkinPlain.woff) format("woff") url(DobkinPlain.ttf) format("ttf") ; 
+    src: url("DobkinPlain.woff") format("woff"), url("DobkinPlain.ttf") format("truetype") ; 
     
 }
 
@@ -51,7 +51,7 @@ body{
 
 }
 
-body>p {
+body p {
 
     font-size: 1.1em;
     text-align: center; 
@@ -81,7 +81,7 @@ address {
 
 
 /* Navigation Styles */
-nav>a {
+nav a {
 
     font-family: 'trebuchet MS', Helvetica, sans-serif;
     padding-top: 10px;
@@ -108,27 +108,31 @@ a:active, a:hover{
 
 
 /* Section Styles */
-section.playbill>h1 {
+section.playbill  h1 {
 
     font-size: 3em;
     font-weight: normal; 
-}
-
-h1{ 
-
     margin: 0px; 
-    padding: 20px, 0px, 10px, 20px; 
+    padding-top: 20px ;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    
 }
+
+
+
+     
+
 
 #play1 {
 
     background-color: hsl(240, 100%, 88%);
-    
 }
 
-#play1>h1 {
+#play1 h1 {
 
-    font-style: Champagne, cursive; 
+    font-family: Champagne,cursive; 
 }
 
 #play2 {
@@ -136,9 +140,9 @@ h1{
     background-color: hsl(25, 88%, 73%);
 }
 
-#play2>h1 {
+#play2 h1 {
 
-    font: Grunge, 'Times New Roman', Times, serif;
+    font-family: Grunge, 'Times New Roman', Times, serif;
 }
 
 #play3 {
@@ -146,9 +150,9 @@ h1{
     background-color: hsl(0, 100%, 75%);
 }
 
-#play3>h1 {
+#play3 h1 {
 
-    font: impact, Charcoal, sans-serif; 
+    font-family: impact, Charcoal, sans-serif; 
 }
 
 #play4 {
@@ -156,9 +160,9 @@ h1{
     background-color: hsl(296, 86%, 86%);
 }
 
-#play4>h1 {
+#play4 h1 {
 
-    font: Dobkin, cursive;
+    font-family: Dobkin, cursive;
 }
 
 
