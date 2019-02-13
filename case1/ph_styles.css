@@ -1,21 +1,21 @@
-@charset "UTF-8" ;
+@charset "UTF-8";
 
 @font-face {
     font-family: Champagne ;
-    src: url("cac_champagne.woff") format('woff'), url("cac_champagne.ttf") format('ttf') ; 
-    
+    src: url("cac_champagne.woff") format('woff'), url("cac_champagne.ttf") format('ttf') ;
+
 }
 
 @font-face {
     font-family: Grunge;
-    src: url("1942.woff") format("woff"), url("1942.ttf") format("truetype") ; 
-    
+    src: url("1942.woff") format("woff"), url("1942.ttf") format("truetype") ;
+
 }
 
 @font-face {
     font-family: Dobkin;
-    src: url("DobkinPlain.woff") format("woff"), url("DobkinPlain.ttf") format("truetype") ; 
-    
+    src: url("DobkinPlain.woff") format("woff"), url("DobkinPlain.ttf") format("truetype") ;
+
 }
 
 
@@ -25,11 +25,11 @@
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
    Case Problem 1
-   
+
    PHCT Typographic Style Sheet
-   Author: Kendall Roberts  
+   Author: Kendall Roberts
    Date:   2/8/19
-   
+
    Filename: ph_styles.css
 
 */
@@ -37,7 +37,7 @@
 
 /* Structural Styles */
 
-html { 
+html {
 
     background-color: hsl(91, 8%, 56%) ;
 
@@ -47,19 +47,19 @@ body{
 
     background-color: hsl(58, 31%, 84%) ;
     font-family: 'Palatino Linotype', "Book Antiqua", Palatino, serif ;
-    
+
 
 }
 
 body p {
 
     font-size: 1.1em;
-    text-align: center; 
+    text-align: center;
 }
 
 header{
 
-    background-color: black; 
+    background-color: black;
 }
 
 p {
@@ -71,12 +71,12 @@ p {
 
 address {
 
-    font-style: normal; 
+    font-style: normal;
     font-size: 0.9em;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+
 }
 
 
@@ -86,20 +86,20 @@ nav a {
     font-family: 'trebuchet MS', Helvetica, sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
-    
+
 
 }
 
 a:link, a:visited {
 
     color: white;
-    background-color: hsla(0, 0%, 42%, 0.4); 
-    text-decoration: none; 
+    background-color: hsla(0, 0%, 42%, 0.4);
+    text-decoration: none;
 
 
 }
 
-a:active, a:hover{ 
+a:active, a:hover{
 
     color: hsla(0, 0%, 100%, 0.7);
     background-color: hsla(0, 0%, 42%, 0.7)
@@ -111,18 +111,18 @@ a:active, a:hover{
 section.playbill  h1 {
 
     font-size: 3em;
-    font-weight: normal; 
-    margin: 0px; 
+    font-weight: normal;
+    margin: 0px;
     padding-top: 20px ;
     padding-right: 0px;
     padding-bottom: 10px;
     padding-left: 20px;
-    
+
 }
 
 
 
-     
+
 
 
 #play1 {
@@ -132,7 +132,7 @@ section.playbill  h1 {
 
 #play1 h1 {
 
-    font-family: Champagne,cursive; 
+    font-family: Champagne,cursive;
 }
 
 #play2 {
@@ -152,7 +152,7 @@ section.playbill  h1 {
 
 #play3 h1 {
 
-    font-family: impact, Charcoal, sans-serif; 
+    font-family: impact, Charcoal, sans-serif;
 }
 
 #play4 {
@@ -181,4 +181,3 @@ dd {
     margin-left: 0px;
     margin-bottom: 10px;
 }
-
