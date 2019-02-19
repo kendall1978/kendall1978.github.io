@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* Kendall Roberts
+    2/19/2019
+        Diet Water   */
+body {
+
+    background-color: rgb(73, 75, 75) ;
+    color: rgb(212, 206, 70) ;
+}
+section.main {
+
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+section.contact {
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0 ;
+    padding-bottom: 0 ;
+    width: 60% ;
+}
+
+a:link {
+
+    color: rgb(13,146,99) ;
+    background-color: rgb(212,206,70) ;
+}
+
+a:hover {
+
+    color: rgb(14,81,53) ;
+    background-color: rgb(212,206,70) ;
+}
+
+a:visited {
+
+    color: rgb(74,186,145) ;
+    background-color: rgb(212,206,70) ;
+
+
+}
