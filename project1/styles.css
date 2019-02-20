@@ -41,3 +41,8 @@ a:visited {
 
 
 }
+
+address>a {
+
+  text-decoration: none; 
+}
