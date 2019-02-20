@@ -7,7 +7,7 @@ body {
     background-color: rgb(73, 75, 75) ;
     color: rgb(212, 206, 70) ;
 }
-section.main {
+section#main {
 
     padding-right: 15px;
     padding-left: 15px;
