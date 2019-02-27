@@ -1,56 +1,84 @@
 body{
 
-    background-color: darkcyan;
+    background-color: rgb(189, 200, 45);
 
 }
 
 a:link {
 
-    color:white;
+    color: rgb(123, 45, 67);
 }
 
 a:hover {
 
-    color:darkblue;
-}
-#duh {
-
-    background-color: lightgray; 
-	
-            
+    color:rgb(200,150, 200);
 }
 
-.backgroundcolorPurple {
-
-    background-color: purple;
-
-}
-
-#links{
-
-    background-color: olivedrab;
-}
-
-#metalfingers {
-
-    margin: 0 300px 0;
-    padding: 1px;
-    width: 35%; 
-    border-style: ridge;
-    border-color: darkcyan;
-}
-
-#dump{
-
-    margin: 0 300px 0;
-    padding: 1px;
-    width: 35%;
-    border-style: ridge;
-    border-color: darkcyan;
-
-}
 
 ol{
 
     list-style-type: square;
+}
+
+nav {
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+nav p {
+
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav.alsoNav {
+
+  grid-row-start: 1;
+  grid-row-end: 999;
+  grid-column-start: 4;
+  grid-column-end: 4;
+
+}
+
+.grid {
+
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+
+}
+section p, section div{
+
+  border: 1px solid black;
+}
+#daParagraph {
+
+  background-color: rgb(15, 15, 200);
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+div.container{
+
+  border: 2px solid rgb(200, 15, 200);
+  width: 50% ;
+  margin: auto;
+}
+
+.goLeft , .goRight{
+
+  width: 25%;
+}
+
+.goLeft {
+
+  float: left;
+  clear: right;
+}
+.goRight {
+
+  float: right;
+  clear: left;
 }
