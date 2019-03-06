@@ -1,0 +1,11 @@
+#monkeyImage {
+
+  /*transform: rotate(45deg)  scale(.75);*/
+  transform: skewY(25deg) translateY(-125px);
+  opacity: .45;
+}
+
+#gridImage{
+
+  filter: blur(1px) invert(85%) ;
+}
