@@ -1,11 +1,20 @@
-#monkeyImage {
-
-  /*transform: rotate(45deg)  scale(.75);*/
-  transform: skewY(25deg) translateY(-125px);
-  opacity: .45;
-}
-
 #gridImage{
 
-  filter: blur(1px) invert(85%) ;
+  filter: grayscale(50%);
+  /*border-radius: 30px 15px 5px 75px;
+  border: 3px solid black;*/
+}
+
+#imageDiv{
+
+  border: 2px solid green;
+  width: 985px;
+  box-shadow: black 7px 15px 15px;
+  z-index: -999;
+}
+
+p{
+
+  /*text-shadow:black 7px 15px 15px, black -7px -15px 15px;*/
+  transform: translate(50px) rotate(45deg);
 }
