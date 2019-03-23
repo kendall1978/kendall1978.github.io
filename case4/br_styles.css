@@ -61,6 +61,7 @@ p.dscrp{
 div#fx img{
 
     filter: drop-shadow(3px 3px 5px grey);
+    padding: 10px 5px 5px 5px;
 }
 
 img#logo {
