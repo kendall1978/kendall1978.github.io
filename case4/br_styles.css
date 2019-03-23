@@ -65,8 +65,7 @@ div#fx img{
 
 img#logo {
 
-    padding-top: 50px;
-    padding-bottom: 0px;
+    padding: 40px 5px 25px 5px ;
 }
 
 /* Horizontal Navigation bar */
@@ -80,6 +79,7 @@ ul#n1 {
   top: 0;
   width: 100%;
   font-family: 'Galindo';
+  z-index: 1;
 
 }
 
@@ -112,6 +112,7 @@ ul#n2 {
     top: 5px;
     width: 200px;
     font-family: 'Galindo';
+    border: 2px solid black;
 }
 #n2 li a {
 
