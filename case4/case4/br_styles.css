@@ -12,3 +12,13 @@
    Filename: br_styles.css
 
 */
+body{
+
+    background-image: url('br_paper.png');
+    background-color: purple;
+}
+
+#paper{
+
+    height: 400px;
+}
