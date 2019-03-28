@@ -23,8 +23,21 @@
 
 /* Flex Layout Styles */
 body {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+section#sheet{
+   flex-shrink: 1;
+   flex-grow: 3;
+   flex-basis: 301px;
 
+}
+article{
 
+   flex-grow: 1;
+   flex-shrink: 3;
+   flex-basis: 180px;
 }
 
 
@@ -34,7 +47,18 @@ body {
 	Mobile Devices: 0 - 480 pixels
    ============================================
 */
+@media only screen and (max-width: 480px) {
+   img.panel{
+      width: 100%;
+   }
+   nav.horizontal{
+      order: 99;
+   }
+   body>footer {
+      order: 100;
 
+   }
+}
 
 
 
@@ -42,3 +66,29 @@ body {
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
+@media only screen and (min-width: 480px){
+   nav.horizontal ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: none; 
+      height: 40px;
+
+   }
+   nav.horizontal ul li{
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+   }
+   img.panel.size1{
+      width: 100%;
+   }
+   img.panel.size2{
+      width: 60%;
+   }
+   img.panel.size3{
+      width: 40%;
+   }
+   img.panel.size4{
+      width: 30%;
+   }
+}

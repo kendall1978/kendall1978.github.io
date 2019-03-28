@@ -14,14 +14,40 @@
 
 */
 
-
+@media print {
 
 /* Hidden Objects */
+nav{
+   display: none;
+}
+footer{
+   display: none;
 
+}
+article{
+   display: none;
 
+}
 
 
 
 
 
 /* Comic Book Sheet Styles */
+section#sheet{
+   width: 6in;
+   margin: 0in auto 0in auto;
+}
+img.panel.size1{
+   width: 5in;
+}
+img.panel.size2{
+   width: 3in;
+}
+img.panel.size3{
+   width: 2in;
+}
+img.panel.size4{
+   width: 1.5in;
+}
+}
