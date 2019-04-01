@@ -1,0 +1,21 @@
+table, tr, td, th{
+
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+
+    background-color: blueviolet;
+    color: burlywood;
+
+}
+tr:nth-child(even){
+
+    background-color: aqua;
+}
+
+tr:nth-child(odd){
+
+    background-color:red;
+}
