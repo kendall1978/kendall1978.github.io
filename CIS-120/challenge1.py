@@ -5,8 +5,8 @@
 def ask_number(question, low, high, step = 1):
     """Ask for a number within a range."""
     response = None
-    while response not in ("y", "n"):
-        response = input(question).lower()
+    while response not in range(low, high, step):
+        response = int(input(question))
     return response
 
 

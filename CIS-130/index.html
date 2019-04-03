@@ -4,10 +4,47 @@
 <head>
 	<title>Flex Box</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet"  href="CSS/styles.css">
+	<link rel="stylesheet"  href="styles.css">
+	<script src="#.js"></script>
 </head>
 
 <body>
+	<form method="POST" action="#">
+		<fieldset>
+			<legend>
+				Contact Infromation
+			</legend>
+			<label for="fname" >First Name</label>
+			<input type="text"  name="fname" required="required" maxlength="10"/><br>
+			<label for="lname">Last Name</label>
+			<input type="text"  name="lname"/><br>
+			<label for="phone">Phone Number</label>
+			<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555"><br>
+			<label for="bday">Birth date</label>
+			<input type="date"><br>
+			<label for="state">State</label> 
+			<input type="text" name="state"/>
+				<datalist id="states">
+					<option value="MO" ></option>
+					<option value="TX" ></option>
+					<option value="OR" ></option>
+					<option value="CA" ></option>
+					<option value="MI" ></option>
+
+				</datalist><br>
+			<label for="cities">City</label>
+			<select name="cities" id="#">
+				<option value="1">Springfeild</option> 
+				<option value="2">Nixa</option> 
+				<option value="3">Ash Grove</option> 
+				<option value="4">Stockton</option> 
+			</select>
+			<label for="color">Color</label>
+			<input type="color" name="color">
+
+		</fieldset>
+		<button type="submit" value="submit">Submit</button>
+	</form>
 
 </body>
 
