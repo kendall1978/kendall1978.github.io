@@ -1,28 +1,70 @@
-table, tr, td, th{
+table,
+tr,
+td,
+th {
 
     border: 2px solid grey;
     border-collapse: collapse;
-    padding: 5px;
-}
-td{
-
-  
+    padding: 7px;
 }
 
-th{
+th:hover {
+    color: purple;
+    background-color: blanchedalmond;
+}
+
+tr.shows:hover {
+    color: seashell;
+    background-color: darkmagenta;
+
+}
+
+.cc {
+
+    background-color: blue;
+    color: yellow;
+}
+
+.ad {
+    background-color: gray;
+    color: black;
+}
+
+.ni {
+    background-color: orange;
+    color: black;
+}
+
+th,
+td {
+    padding: 12px;
+}
+
+th {
 
     background-color: black;
     color: burlywood;
 
 }
-tr:nth-child(even){
 
-    background-color:navy;
+tr:nth-child(even) {
+
+    background-color: sienna;
     color: whitesmoke;
 }
 
-tr:nth-child(odd){
+tr:nth-child(odd) {
 
-    background-color: maroon;
+    background-color: darkgreen;
     color: whitesmoke;
+}
+
+table {
+
+    display: inline-table;
+}
+
+caption {
+
+    display: inline-block;
 }
