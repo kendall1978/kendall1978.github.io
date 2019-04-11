@@ -1,0 +1,30 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 7
+   Case Problem 2
+
+   Spice Bowl Payment Form Validation Style Sheet
+   Author: Kendall Roberts
+   Date:   4/9/19
+
+   Filename: sb_validate.css
+
+*/
+
+
+/* Validation Styles */
+
+input:not([type= ' radio ' ]){
+
+   background-color: rgb(255, 218, 165);
+}
+
+input:not([type= ' radio ' ]):focus:valid{
+
+   background-color: rgb(215, 255, 215) url(sb_valid.png) bottom right/no-repeat;
+}
+input:not([type= ' radio ' ]):focus:invalid{
+
+   background-color: rgb(255, 245, 215) url(sb_invalid.png) bottom right/no-repeat;
+
+}
