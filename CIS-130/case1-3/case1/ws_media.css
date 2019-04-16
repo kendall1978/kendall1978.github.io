@@ -15,9 +15,31 @@
 
 /* VideoPlayer Styles */
 
+video{
 
+    display: block;
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (min-width: 521px){
+
+    video{
+
+        width: 360px;
+        float: right;
+        
+    }
+}
 
 
 /* Track Styles */
+::cue{
 
+    font-size: 1.3em;
+    color: rgb(221,128,160);
+    background-color: rgba(255,255,255, 0.8)
+}
 
