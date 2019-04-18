@@ -1,5 +1,3 @@
-# Trivia Challenge
-# Trivia game that reads a plain text file
 #Kendall Roberts
 #Chapter 7 Challenge
 
