@@ -10,7 +10,7 @@ def intro():
     print("     Welcome to Kendall's Quick Car Buying Program")
     print(" Each different type of car is priced based on engine size and features.")
     print(" We only sell 2 engine sizes that being V6 and V8.")
-    print(" Features include tire size, sunroof, seat type.")
+    print(" Features include Sunroof, Touch Screen Stereo, GPS Navigation System.")
     print("                                                 ")
 
 
@@ -47,16 +47,31 @@ def engineType():
             print('Please type either 1 or 2 to choose your type of engine')
         return engineCost
 
-
+def features():
+    featCost = 0
+    while featCost == 0:
+        try:
+            userInput = int(input("Choose the feature you would like(Choose One)  1-Sunroof  2-Touch Screen Stereo  3-GPS Navigation System:   "))
+            if  userInput == 1:
+                print('You have choosen the V6 engine type')
+                engineCost = 500
+            elif userInput == 2:
+                print('You have choosen the V8 engine type')
+                engineCost = 750
+        except ValueError:
+            print('Please type either 1 or 2 to choose your type of engine')
+        return engineCost
 
 
 
 
 def main():
     intro()
-    totalPrice = engineType() + carType()
+    totalPrice = carType() + engineType() + features()
     #Print conclusion and total price
-    print("Your vehicle choices have made your total cost: "+ totalPrice)
+    print("The total cost of your vehicle plus your engine type and features is below!")
+    print(totalPrice)
+    print("Thank you for chosing Kendall's Quick Vehicle Buying program!")
 
 #Call Main Function to run the Program
 main()
