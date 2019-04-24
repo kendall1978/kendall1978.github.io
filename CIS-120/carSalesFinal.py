@@ -13,6 +13,7 @@ def intro():
     print(" Features include tire size, sunroof, seat type.")
     print("                                                 ")
 
+
 def carType():
     cost = 0
     while cost == 0:
@@ -53,12 +54,13 @@ def engineType():
 
 def main():
     intro()
-    
+    totalPrice = engineType() + carType()
+    #Print conclusion and total price
+    print("Your vehicle choices have made your total cost: "+ totalPrice)
 
 #Call Main Function to run the Program
 main()
 
-#Print conclusion and total price
-totalPrice = engineType() + carType()
 
-print("Your vehicle choices have made your total cost: "+ totalPrice)
+
+
