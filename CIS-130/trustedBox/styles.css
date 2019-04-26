@@ -19,6 +19,13 @@ article, aside, body, div, footer, header, h1, h2, h3, nav, p {
   font-family: 'Lora', serif;
  
 }
+h2.hours{
+   font-size: 35px;
+}
+h3.schedule{
+   font-size: 25px;
+
+}
 
 /* body and page container */
 
@@ -35,7 +42,7 @@ p {
    font-size: 1.2em;
 }
 
-
+/* Videos and Images styles */
 .video-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -48,4 +55,27 @@ p {
     height:100%;
     width:100%;
     position:absolute;
+}
+/* Table styles */
+table,
+tr,
+td,
+th {
+
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 7px;
+    font-size: 30px;
+}
+
+tr:nth-child(even) {
+
+   background-color: rgb(44, 16, 3);
+   color: whitesmoke;
+}
+
+tr:nth-child(odd) {
+
+   background-color: rgb(1, 54, 1);
+   color: whitesmoke;
 }
