@@ -1,3 +1,5 @@
+#Kendall Roberts
+#CIS- 120
 #critter
 
 class Critter(object):
