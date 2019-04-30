@@ -126,8 +126,14 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
 
-   background-color: rgb(1, 54, 1);
+   background-color: rgba(0, 0, 0, 0.836);
    color: whitesmoke;
+}
+table{
+
+   width:70%; 
+   margin-left:15%;
+   margin-right:15%; 
 }
 
 /* Form styles */
@@ -171,10 +177,6 @@ th {
    border-collapse: collapse;
    padding: 5px;
    font-size: 25px;
-}
-nav.small{
-
-   display: none;
 }
 
 
@@ -233,12 +235,40 @@ h3.schedule {
 }
 
 
-nav.large{
-   display: none;
-}
+
 
 
 }
+@media print{
+
+   div#contain{
+
+      background-color: white;
+      color: black;
+      border: none;
+   }
+   nav{
+      display: none;
+   }
+   table{
+      width:70%; 
+      margin-left:15%;
+      margin-right:15%;
+
+   }
+   table,
+   tr,
+   td,
+   th {
+   
+      border: 2px solid black;
+      border-collapse: collapse;
+      padding: 3px;
+      font-size: 20px;
+   }
+
+
+} 
  
 
 /*Nav bar stles*/
