@@ -13,43 +13,55 @@
 </head>
 
 <body>
-    <header>
-        <article>
-            <h2>Contact Us</h2>
-        </article>
-        <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="hours.html">Hours</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <form action="">
-        <label for="fName">First Name</label>
-        <input type="text" required="required" id="firstBox" />
-        <label for="lname">Last Name</label>
-        <input type="text" id="lastBox" required="required" /><br><br>
-        <label for="phone">Phone Number</label>
-        <input type="tel"  required="required"  id="phoneBox" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"><br><br>
-        <label for="email">E-mail</label><br>
-        <input type="text" name="mail"><br>
-        <label for="comment">Comments</label><br>
-        <input type="text" name="comment" size="50"><br><br>
-        <label for="howList">How did you hear about us?</label>
-        <input type="text" id="howList" required="required" list="howList"><br><br>
-        <datalist id="howList">
-                <option value="Through a friend">
-                <option value="The internet">
-                <option value="Tv Commercial">
-                <option value="Billboard">
-        </datalist>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-    </form>
+    <a href="#content" id="maincontent">Skip NAV</a>
+    <div id="contain">
+        <header>
+            <nav>
+                <div class="header">
+                    <img src="box.png">
+                    <h1>Trusted Box Company</h1>
+                </div>
+
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="hours.html">Hours</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="content"></main>
+        <form action="">
+            <label for="fName">First Name</label>
+            <input type="text" required="required" id="firstBox" /><br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lastBox" required="required" /><br>
+            <label for="phone">Phone Number</label>
+            <input type="tel" required="required" id="phoneBox"
+                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"><br>
+            <label for="email">E-mail</label>
+            <input type="text" name="mail"><br>
+            <label for="comment">Comments</label>
+            <input type="text" name="comment" size="50"><br>
+            <label for="howList">How did you hear about us?</label>
+            <select name="howlist" id="howList" required="required">
+                <datalist id="howList">
+                    <option value="Through a friend">Through a friend</option>
+                    <option value="The internet">The internet</option>
+                    <option value="Tv Commercial">Tv Commercial</option>
+                    <option value="Billboard">Billboard</option>
+                </datalist>
+            </select><br>
+            <input type="submit" value="Submit"><br>
+            <input type="reset" value="Reset"><br>
+        </form>
 
 
-    </form>
+        <footer>
+            Trusted Box Company&copy; 2019 Springfield MO
+        </footer>
+
+    </div>
+
 
 
 
