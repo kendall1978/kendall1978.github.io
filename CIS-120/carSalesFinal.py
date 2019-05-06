@@ -28,9 +28,11 @@ def carType():
             elif userInput == 3:
                 print('You have chosen the SUV For $18,000')
                 cost += 18000
+            else:
+                print("Please type a 1, 2 or 3 to choose your car type")
         except ValueError:
             print('Please type either 1, 2 or 3 to pick a type of car')
-        return cost
+    return cost
 
 def engineType():
     engineCost = 0
@@ -43,9 +45,11 @@ def engineType():
             elif userInput == 2:
                 print('You have choosen the V8 engine type')
                 engineCost = 750
+            else:
+                print("Please chose either 1 or 2 to choose your engine type.")
         except ValueError:
             print('Please type either 1 or 2 to choose your type of engine')
-        return engineCost
+    return engineCost
 
 def features():
     featCost = 0
@@ -53,14 +57,19 @@ def features():
         try:
             userInput = int(input("Choose the feature you would like(Choose One)  1-Sunroof  2-Touch Screen Stereo  3-GPS Navigation System:   "))
             if  userInput == 1:
-                print('You have choosen the V6 engine type')
-                engineCost = 500
+                print('You have choosen the sunroof!')
+                featCost = 500
             elif userInput == 2:
-                print('You have choosen the V8 engine type')
-                engineCost = 750
+                print('You have choosen the Touch Screen Stereo!')
+                featCost = 750
+            elif userInput == 3:
+                featCost = 450
+                print("You have choosen the GPS Navigation system!")
+            else:
+                print("Please choose either 1, 2 or 3 to select a feature!")
         except ValueError:
             print('Please type either 1 or 2 to choose your type of engine')
-        return engineCost
+    return featCost
 
 
 
