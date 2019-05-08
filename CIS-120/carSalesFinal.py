@@ -40,10 +40,10 @@ def engineType():
         try:
             userInput = int(input("What type of engine would you like?  1-V6  2-V8:   "))
             if  userInput == 1:
-                print('You have choosen the V6 engine type')
+                print('The v6 engine, vroom vroom')
                 engineCost = 500
             elif userInput == 2:
-                print('You have choosen the V8 engine type')
+                print('The V8 engine, VurrroomVurroom')
                 engineCost = 750
             else:
                 print("Please chose either 1 or 2 to choose your engine type.")
@@ -57,18 +57,18 @@ def features():
         try:
             userInput = int(input("Choose the feature you would like(Choose One)  1-Sunroof  2-Touch Screen Stereo  3-GPS Navigation System:   "))
             if  userInput == 1:
-                print('You have choosen the sunroof!')
                 featCost = 500
+                print('You have choosen the sunroof!')
             elif userInput == 2:
-                print('You have choosen the Touch Screen Stereo!')
                 featCost = 750
+                print('You have choosen the Touch Screen Stereo!')
             elif userInput == 3:
                 featCost = 450
                 print("You have choosen the GPS Navigation system!")
             else:
                 print("Please choose either 1, 2 or 3 to select a feature!")
         except ValueError:
-            print('Please type either 1 or 2 to choose your type of engine')
+            print('Please type either 1, 2 or 3 to choose your fetures')
     return featCost
 
 
@@ -81,6 +81,10 @@ def main():
     print("The total cost of your vehicle plus your engine type and features is below!")
     print(totalPrice)
     print("Thank you for chosing Kendall's Quick Vehicle Buying program!")
+    
+    f= open("receipt.txt","w+")
+    f.write(str(totalPrice))
+    f.close()
 
 #Call Main Function to run the Program
 main()
