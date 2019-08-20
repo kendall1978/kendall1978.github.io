@@ -1,0 +1,63 @@
+/* 
+         Final
+         Filename: styles
+      
+         Author:   Kendall Roberts
+         Date:    8/19/2019
+         HTML5 and CSS3 Review for CIS-131
+ */
+
+ body{
+     background-color: rgb(68, 68, 68)
+ }
+
+ nav{
+   list-style-type: none;
+   background-color: #4c066f;
+   position: fixed;
+   top: 0;
+   width: 75%;
+   border: 5px solid rgba(0, 0, 0, 0.836);
+   border-radius: 15px;
+   text-align: center;
+
+}
+
+ul{
+   list-style-type: none;
+
+}
+
+li {
+   float: left;
+}
+
+li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+
+li a:hover {
+   background-color: grey;
+}
+
+div.contain {
+    border: 5px solid  rgba(0, 0, 0, 0.836);
+    border-radius: 15px;
+    width: 75%;
+    display: flexbox;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    top:300px;
+    background-color: #4c066f;
+}
+article{
+    
+}
