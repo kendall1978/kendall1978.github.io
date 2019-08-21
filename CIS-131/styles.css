@@ -13,13 +13,14 @@
 
  nav{
    list-style-type: none;
-   background-color: #4c066f;
+   background-color: rgb(146, 54, 0);
    position: fixed;
    top: 0;
    width: 75%;
    border: 5px solid rgba(0, 0, 0, 0.836);
    border-radius: 15px;
    text-align: center;
+   z-index: 1;
 
 }
 
@@ -56,8 +57,29 @@ div.contain {
     padding-top: 30px;
     padding-bottom: 30px;
     top:300px;
-    background-color: #4c066f;
+    background-color: rgb(146, 54, 0);
 }
-article{
+select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
     
-}
+  }
+
+  img.dog {
+
+    height: 30%;
+    width: 30%;
+    padding-top: 15px;
+    float: left;
+
+  }
+  img.guitar {
+      height: 35%;
+      width: 35%;
+      padding-top: 15px;
+  }
