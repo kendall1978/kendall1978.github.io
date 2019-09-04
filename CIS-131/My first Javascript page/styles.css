@@ -14,12 +14,6 @@ body{
     transform: translate(-50%, -55%);
     text-align: center;
 }
-.fname{
-    padding-right: 20px;
-}
-.lname{
-    padding-right: 20px;
-}
 .subBut{
     background-color: rgb(68, 36, 14); 
   border: none;

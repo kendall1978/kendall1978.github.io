@@ -10,9 +10,8 @@
         -->
     <meta charset="utf-8">
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js" defer></script> 
 </head>
 
 <body>
@@ -39,27 +38,30 @@
             <h1>Kendall Roberts Blog</h1>
             <h3>Please Subscribe</h3>
         </header>
-        <form action="">
-            <div class="col">
-                <div class="col"><label for="fName" class="fName">First Name</label></div>
-                <input type="text" required="required" class="fName">
-            </div>
-            <div class="col">
-                <div class="col"><label for="lName" class="lName">Last Name</label></div>
-                <input type="text" required="required" class="lName">
-            </div>
-            <div class="col"><label for="howList">Preferred Contact</label>
-                <div class="col"><select name="howlist" id="howList" required="required"></div>
-                <datalist id="howList">
-                    <option value="Email">Email</option>
-                    <option value="Cell">Cell Phone</option>
-                    <option value="Whisper">Wisper</option>
-                    <option value="Letter">Letter</option>
-                </datalist>
-            </div>
-            <input type="button" class="subBut" value="Subscribe" name="">
+        <div id="subScribe">
+            <form action="">
+                <div class="col">
+                    <div class="col"><label for="fName" class="fName">First Name</label></div>
+                    <input type="text" required="required" id="fName">
+                </div>
+                <div class="col">
+                    <div class="col"><label for="lName" class="lName">Last Name</label></div>
+                    <input type="text" required="required" id="lName">
+                </div>
+                <div class="col"><label for="howList">Preferred Contact</label>
+                    <div class="col"><select name="howlist" id="howList" required="required"></div>
+                    <datalist>
+                        <option value="Email">Email</option>
+                        <option value="Cell">Cell Phone</option>
+                        <option value="Whisper">Wisper</option>
+                        <option value="Letter">Letter</option>
+                    </datalist>
+                </div>
+                <input type="button" class="subBut" value="Subscribe" name="" onclick="document.getElementById('subScribe').innerHTML = 
+                document.getElementById('fName').value + ' ' + document.getElementById('lName').value + ' ' + document.getElementById('howList').value">
 
-        </form>
+            </form>
+        </div>
     </div>
 </body>
 
