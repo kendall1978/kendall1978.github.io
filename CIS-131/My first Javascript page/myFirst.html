@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Kendall Roberts</title>
+    <!--
+        Author: Kendall Roberts
+        Class: CIS_131
+        Date:		8/31/2019
+        -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script> 
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md">
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="description">
+        <header class="page-header header container-fluid">
+            <h1>Kendall Roberts Blog</h1>
+            <h3>Please Subscribe</h3>
+        </header>
+        <form action="">
+            <div class="col">
+                <div class="col"><label for="fName" class="fName">First Name</label></div>
+                <input type="text" required="required" class="fName">
+            </div>
+            <div class="col">
+                <div class="col"><label for="lName" class="lName">Last Name</label></div>
+                <input type="text" required="required" class="lName">
+            </div>
+            <div class="col"><label for="howList">Preferred Contact</label>
+                <div class="col"><select name="howlist" id="howList" required="required"></div>
+                <datalist id="howList">
+                    <option value="Email">Email</option>
+                    <option value="Cell">Cell Phone</option>
+                    <option value="Whisper">Wisper</option>
+                    <option value="Letter">Letter</option>
+                </datalist>
+            </div>
+            <input type="button" class="subBut" value="Subscribe" name="">
+
+        </form>
+    </div>
+</body>
+
+</html>

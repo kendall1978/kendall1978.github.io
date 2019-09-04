@@ -1,0 +1,51 @@
+/*
+Kendall Roberts
+CIS-131
+On click events Javascript
+*/
+body{
+    background-image: url("mountain.jpg");
+}
+/* Form Styles*/
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+.fname{
+    padding-right: 20px;
+}
+.lname{
+    padding-right: 20px;
+}
+.subBut{
+    background-color: rgb(68, 36, 14); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Libre Baskerville', serif;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+/*Nav bar stles*/
+
+nav{
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(68, 36, 14); 
+    border-radius: 5px;
+
+
+}
+li a{
+    color: white;
+}
+li a:hover {
+    color: grey;
+ }
