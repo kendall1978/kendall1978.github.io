@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>  Assignment WEBSITE  </title>
+<meta name="Keywords" content="Huy Pham, HP, Homework, Assignment"/>
+<meta name="Description" content="HP Assignment WEBPAGE"/>
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet">
+
+
+<script>
+var getID;
+function ChangePic(getID)
+{
+    document.getElementById('idBig').src = getID.src;
+}
+
+</script>
+
+</head>
+
+
+<body>
+
+<header>
+
+
+<br style="clear:left;"/>
+
+
+
+<div id= "content"> <!--content in the page- not include header + footer  -->
+
+<br/>
+<br/>
+<h2>IMAGES SWAPPING FUNCTION</h2>
+
+<div id="threePic">
+<img src="images/elephant.jpg" alt="elephant" onclick="ChangePic(this)" id="thumbnail1" height="150" width="200"/>
+<img src="images/giraffe.jpg" alt="giraffe" onclick="ChangePic(this)" id="thumbnail2" height="150" width="200"/>
+<img src="images/duck.jpg" alt="duck" onclick="ChangePic(this)" id="thumbnail3" height="150" width="200"/>
+</div>
+<br style="clear:left;"/>
+
+
+<img src="images/elephant.jpg" alt="fullSizePic" id="idBig" height="400" width="550"/>
+
+
+</div> <!-- end content -->
+
+
+<hr style="width:60%"/>
+
+<footer>
+&copy;Web Dev
+</footer>
+<script src="events.js"></script>
+</body>
+
+</html>
+
+<!-- var getID,get;
+function ChangePic(getID)
+{
+get = document.getElementById(getID).src;
+alert(get);
+document.getElementById("idBig").src= get;
+<img src="elephant.jpg" alt="elephant" onclick="ChangePic('thumbnail1')" id="thumbnail1" height="150" width="200"/>
+<img src="giraffe.jpg" alt="giraffe" onclick="ChangePic('thumbnail2')" id="thumbnail2" height="150" width="200"/>
+<img src="duck.jpg" alt="duck" onclick="ChangePic('thumbnail3')" id="thumbnail3" height="150" width="200"/>
+
+<img src="elephant.jpg" alt="fullSizePic" id="idBig" height="300" width="400"/> -->
+<!--   -->
