@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compattible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Data Validation</h1>
+    <div id="timer"></div>
+    <form action="thankYou.html" method="get">
+        <input type="text" name="userName">
+        <div id = "err"></div>
+        <!--<input onclick="vals(this.form)" type="button" value="Submit the Data" id="val">-->
+        <input onclick="return vals(this.form)" type="submit" value="Submit the Data" id="val">
+
+    </form>
+    <script src = "index.js"></script>
+</body>
+</html>
