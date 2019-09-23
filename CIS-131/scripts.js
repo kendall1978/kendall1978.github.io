@@ -13,7 +13,7 @@ function createGreeting(firstName, myFunctionName){
 createGreeting("Nugget", greeting);
 
 /******************** Timer  */
-//var myTimer = setInterval(aFunction, 5000);
+var myTimer = setInterval(aFunction, 5000);
 
 
 document.getElementById("stop").addEventListener('click', function(){

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <img src="bugs.jpg" id = "mainImage">
+        <script>
+            var myImage = document.getElementById('mainImage');
+            var imgArray = ["fizz.jpg", "duck.png", "marvin.jpg", "nasus.jfif"];
+            var imgIndex = 1;       
+
+            function changeImg(){
+                myImage.setAttribute("src", imgArray[imgIndex]);
+                imgIndex++;
+                if (imgIndex > 3){
+                    imgIndex = 0
+                    }
+            }
+        </script>
+        <button onclick="changeImg()">next</button>
+    </body>
+</html>
