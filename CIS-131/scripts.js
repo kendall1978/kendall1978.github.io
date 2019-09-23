@@ -34,9 +34,9 @@ myDiv.innerHTML = movies[1];
 myString = "<select id='movies'>";
 // for loop
 
-//for (var i = 0; i < movies.length; i++){
-  //  myString += "<option>" + movies[i] +  "</option>";
-//}
+for (var i = 0; i < movies.length; i++){
+    myString += "<option>" + movies[i] +  "</option>";
+}
 movies.forEach(function(el){
     //myString += "<option>" + el +  "</option>";
     myString += `<option>${el}</option>`; 
@@ -48,16 +48,16 @@ document.getElementById('getIt').addEventListener('click', function(){
     alert(document.getElementById('movie').value);
 })
 //add to the array
-movies.push("Jumanji");
-console.log(movies);
+//movies.push("Jumanji");
+//console.log(movies);
 
 //add an element to the begining of an array
-var aVar = movies.pop();
-movies.unshift("50 first Dates");
-console.log(movies);
-console.log(aVar);
+//var aVar = movies.pop();
+//movies.unshift("50 first Dates");
+//console.log(movies);
+//console.log(aVar);
 
-movies.splice(1,2);
-console.log(movies);
+//movies.splice(1,2);
+//console.log(movies);
 
 
