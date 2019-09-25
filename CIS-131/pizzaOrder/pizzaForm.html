@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--
+        Kendall Roberts
+        CIS-131
+        Cheech's Pizza Company
+    -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="pizza.css">
     <title>Cheech's Pizza</title>
 </head>
@@ -27,15 +34,22 @@
     </header>
     <div id="contain">
         <form>
-            <label for="name">Order Name</label>
-            <input type="text" name="name">
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone">
+            <label for="name"><h3>Order Name</h3></label>
+            <input type="text" name="name" id="oName"><br>
+            <label for="phone"><h3>Phone Number</h3></label>
+            <input type="tel" name="phone" id="phoneNum"><br>
+            <label for="pizzaNum"><h3>How many pizza's would you like?</h3></label>
             <div id="selBox1"></div>
+            <label for="pizzaType"><h3>What kind of pizza would you like?</h3></label>
+            <div id="selBox2"></div><br>
+            <input type="button" value="Complete Order" id="confirmButton">
+            <div id ="completeOrder"></div>
         </form>
+        <!--<input type="button" class="subBut" value="Subscribe" name="" onclick="document.getElementById('subScribe').innerHTML = 
+                document.getElementById('fName').value + ' ' + document.getElementById('lName').value + ' ' + document.getElementById('howList').value">-->
     </div>
     <footer>
-        Cheech's Pizza Co &copy; Springfeild Mo
+        Cheech's Pizza Co &copy; Springfield Mo
     </footer>
     <script src="pizza.js"></script>
 </body>

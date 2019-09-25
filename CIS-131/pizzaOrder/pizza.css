@@ -1,10 +1,16 @@
+/*
+   Kendall Roberts
+   CIS-131
+   Cheech's Pizza Company
+*/
+
 /* Nav Bar Styles */
 nav{
     background-color: #fcfcfc;
     width: 50%;
     z-index: 1;
     border: 5px solid rgba(0, 0, 0, 0.836);
-    border-radius: 5px;
+    border-radius: 7px;
     margin-left: 25%;
     margin-right: auto;
  
@@ -27,6 +33,7 @@ nav{
  li{
      display: inline;
      text-align: center;
+     font-family: 'Mansalva', cursive;
  }
  
  .header img {
@@ -35,6 +42,10 @@ nav{
     float: left;
     margin-left: auto;
     position: relative;
+ }
+ .header h1{
+    font-family: 'Mansalva', cursive;
+    font-size: 32pt;
  }
 
 
@@ -45,6 +56,8 @@ nav{
 font-family: "Times New Roman", Georgia, Serif;
 margin-left:auto;
 margin-right:auto;
+color: rgb(34, 26, 26);
+background-color: rgb(105, 105, 105);
 }
  #contain {
     text-align: center;
@@ -59,4 +72,32 @@ footer{
     border: solid 5px black;
     border-radius: 10px;
     text-align: center;
+    font-family: 'Arvo', sans-serif;
+
+ }
+
+ /* Input Box Styles*/
+ input {
+   padding: 16px 16px;
+   color: inherit;
+   width: 50%;
+   font-family: 'Arvo', sans-serif;
+   font-size: 18pt;
+   border: 3pt solid rgba(0, 0, 0, 0.836);
+   border-radius: 7px;
+ }
+ label{
+   font-family: 'Mansalva', cursive; 
+ }
+
+ select{
+   width: 30%;
+   font-family: 'Arvo', sans-serif;
+   font-size: 18px;
+   color: #000000;
+ }
+
+ div#completeOrder{
+    font-size: 25pt;
+    font-family: 'Arvo', sans-serif;
  }
