@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    <form action="thankyou.html" method="get">
+        <input type="text" name="userName" id="userName" name=userName>
+        <div style="display:inline-block" id="userNameErr"></div>
+
+        <input type="text" name="email" id="email" name=email>
+        <div style="display:inline-block" id="emailErr"></div>
+
+        <input type="text" name="phone" id="phone" name=phone>
+        <div style="display:inline-block" id="phoneErr"></div>
+
+
+        <input type="button" onClick="valForm(this.form)" value="Validate">
+
+        <select name="qty" id="qty">
+            <script>
+                for (var i = 1; i <= 10;  i++)
+                {
+                    document.write(`<option value=${i}>${i}</option>`)
+                }
+            </script>
+
+        </select>
+
+        <select name="product" id="productSelection">
+            <script>
+                var products =['Coke', 'Dr Pepper', 'Mt Dew', 'Sprite', 'Diet Coke']
+                for(var i = 0; i < products.length; i++)
+                {
+                    document.write(`<option value=${products[i]}>${products[i]}</option>`)
+                }
+            </script>
+
+
+        </select>
+
+
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>

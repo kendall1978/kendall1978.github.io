@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myName = "My name is Kendall";
+        console.log(myName.length);
+        console.log(myName.charAt(4));
+
+        for(var i = 0; i < myName.length; i++){
+            console.log(myName.charAt(i));
+        }
+
+        //****** three use cases for Regex  */
+
+        // **** VALIDATION ** ??
+        var phoneNumber = "417-447-8297";
+        var regex = /\d{3}[.-]\d{3}[.-]\d{4}/
+        var isValidNumber = regex.test(phoneNumber)
+        console.log(isValidNumber)
+        //** Extraction *//
+
+        var address = "1001 N Chesnut Expressway, Springfeild, MO 65872";
+        var stateZip = address.match(/[A-Z]+\s\d{5}/g);
+        console.log(stateZip);
+
+        //**** REPLACE **//
+        name = "Kendall does stuff, bla bla Kendall";
+        var replaceName = name.replace(/Kendall/g, "Bobby")
+        console.log(replaceName);
+
+    </script>
+</body>
+</html>
