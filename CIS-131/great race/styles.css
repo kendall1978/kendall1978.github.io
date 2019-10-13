@@ -1,0 +1,123 @@
+/*Kendall Roberts
+CIS-131
+Great Race*/
+body{
+    background-image: url("space.jpg");
+}
+#light{
+    height: 150px;
+    width: auto;
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    left: 300px;
+    top: 20px;
+
+}
+
+#bugs{
+    height: auto;
+    width: 150px;
+    display: block;
+    margin-top: 35px;
+    position: relative;
+    left: 50px;
+
+}
+
+#daffy{
+    height: auto;
+    width: 150px;
+    display: block;
+    margin-top: 100px;
+    position: relative;
+    left: 50px;
+}
+
+#daffyWin{
+    height: 400px;
+    width: auto;
+
+
+}
+#bugsWin{
+    height: 400px;
+    width: auto;
+
+ 
+}
+
+#bugsContain{
+    margin: auto;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 50%;
+    border: 3px solid gold;
+    padding: 10px;
+    color: whitesmoke;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    display: none;
+    border-radius: 20px;
+    font-size: 25pt;
+    background-color: black;
+
+}
+
+#daffyContain{
+    margin: auto;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 50%;
+    border: 3px solid gold;
+    padding: 10px;
+    color: whitesmoke;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    display: none;
+    border-radius: 20px;
+    font-size: 25pt;
+    background-color: black;
+
+}
+
+.contain{
+    display: block;
+
+}
+.line{
+    height: auto;
+    width: 20px;
+    margin-top: 170px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 1157px;
+
+}
+
+.titleContain{
+    color: whitesmoke;
+    position: fixed;
+    z-index: 1;
+    left: 555px;
+    border: 3px solid gray ;
+    border-radius: 10px;
+    text-align: center;
+}
+.titleContain h1{
+    padding: 10px;
+}
+.titleContain p{
+    padding: 7px;
+}
+
+.finishMarker{
+    position: fixed;
+    z-index: 1;
+    left: 1079px;
+    height: 167px;
+    width: auto; 
+}
