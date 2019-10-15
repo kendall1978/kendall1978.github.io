@@ -7,6 +7,8 @@ Address Book
 imgAry = ['ironMan.jpg', 'captainAmerica.jpg', 'doctorStrange.jpg',
  'spiderman.jpg', 'thor.jpg', 'blackPanther.jpeg', 'newMan.jpg'];
 
+
+
 function contacts(firstName, lastName, phone, email, image){
     this.contactFirst = firstName;
     this.contactLast = lastName;
@@ -17,6 +19,7 @@ function contacts(firstName, lastName, phone, email, image){
         document.getElementById('contacts').innerHTML = `<img src ='${image}'><h2>Name: ${this.contactFirst} ${this.contactLast}</h2>
         <h2>Phone: ${this.contactPhone}</h2> <h2>Email: ${this.contactEmail}</h2> `;
     }
+
 
 
 }
@@ -42,6 +45,17 @@ const docStrange = new contacts('Stephen', 'Strange', '917-449-9831', 'wizardTim
 const thor = new contacts('Thor', 'Odinson', '917-873-1254', 'thunderBoy@gmail.com', 'thor.jpg');
 const blackPanther = new contacts('T\'Challa', '', '917-899-5803', 'wakandaForever@gmail.com', 'blackPanther.jpeg');
 
+contactsArry=[ironMan, capAmerica, docStrange, spiderman, thor, blackPanther];
+
+function contactTabs(){
+    document.getElementById('ironMan').innerHTML = `<h3>${contactsArry[0].contactFirst} ${contactsArry[0].contactLast}</h3>`;
+    document.getElementById('capAmerica').innerHTML = `<h3>${contactsArry[1].contactFirst} ${contactsArry[1].contactLast}</h3>`;
+    document.getElementById('docStrange').innerHTML = `<h3>${contactsArry[2].contactFirst} ${contactsArry[2].contactLast}</h3>`;
+    document.getElementById('spiderman').innerHTML = `<h3>${contactsArry[3].contactFirst} ${contactsArry[3].contactLast}</h3>`;
+    document.getElementById('thor').innerHTML = `<h3>${contactsArry[4].contactFirst} ${contactsArry[4].contactLast}</h3>`;
+    document.getElementById('blackPanther').innerHTML = `<h3>${contactsArry[5].contactFirst} ${contactsArry[5].contactLast}</h3>`;
+}
+contactTabs();
 document.getElementById('ironManDisplay').addEventListener('click', function(){
     ironMan.displayContacts();
 });

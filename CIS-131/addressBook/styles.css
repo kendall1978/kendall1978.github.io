@@ -4,21 +4,22 @@ Address Book
 10/13/2019*/
 
 
-img{
+img {
     height: 500px;
     width: auto;
 }
-div#contacts img{
+
+div#contacts img {
     height: auto;
     width: 325px;
 }
 
-.row{
-    padding-top:10px ;
+.row {
+    padding-top: 10px;
     padding-left: 50px;
 }
 
-.myContain{
+.myContain {
     text-align: center;
     border: 25px solid black;
     border-radius: 10px;
@@ -28,54 +29,56 @@ div#contacts img{
     margin-top: 1%;
 }
 
-.ironMan{
+#ironMan {
     border-left: 3px solid rgb(184, 0, 0);
     padding: 10px 25px 10px 25px;
     background-color: rgb(247, 137, 137);
     opacity: 1.0;
 }
 
-.docStrange{
+#docStrange {
     border-left: 3px solid rgb(13, 95, 2);
     padding: 10px 25px 10px 25px;
     background-color: rgb(140, 255, 150);
     opacity: 1.0;
 }
 
-.spiderman{
+#spiderman {
     border-left: 3px solid rgb(77, 0, 0);
     padding: 10px 25px 10px 25px;
     background-color: rgb(160, 79, 112);
     opacity: 1.0;
 }
 
-.thor{
+#thor {
     border-left: 3px solid rgb(29, 127, 255);
     padding: 10px 25px 10px 25px;
-    background-color: rgb(80, 162, 165);
+    background-color: rgb(230, 226, 27);
     opacity: 1.0;
 }
 
-.blackPanther{
+#blackPanther {
     border-left: 3px solid black;
     padding: 10px 25px 10px 25px;
     background-color: rgb(99, 99, 99);
     opacity: 1.0;
 }
 
-.capAmerica{
+#capAmerica {
     border-left: 3px solid rgb(2, 0, 90);
     padding: 10px 25px 10px 25px;
     background-color: rgb(44, 68, 121);
     opacity: 1.0;
 }
-.newContact{
+
+.newContact {
     border-left: 3px solid rgb(90, 0, 90);
     padding: 10px 25px 10px 25px;
     background-color: rgb(134, 115, 139);
     opacity: 1.0;
 }
-footer{
+
+footer {
     background-color: rgb(54, 55, 56);
     opacity: 1.0;
     color: whitesmoke;
@@ -83,4 +86,13 @@ footer{
     padding-top: 15px;
     padding-bottom: 15px;
     margin-top: 10px;
+}
+
+.contactTabs h2 {
+    border-left: 3px solid rgb(68, 0, 68);
+    border-right: 3px solid rgb(68, 0, 68);
+    border-top: 3px solid rgb(68, 0, 68);
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(105, 105, 105);
+    opacity: 1.0;
 }
