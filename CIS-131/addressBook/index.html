@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+			Name: Kendall Roberts
+			Date: 10/13/2019
+		-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Address Book</title>
+</head>
+
+<body>
+    <div class='myContain'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    <div id="contacts">
+                        <img src="book.png" alt="Book">
+                        <h2>Super Hero Address Book</h2>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div id="ironManDisplay">
+                        <div class="row">
+                            <div class="ironMan">
+                                <h1>Iron Man</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="capDisplay">
+                        <div class="row">
+                            <div class="capAmerica">
+                                <h1>Captain America</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="docDisplay">
+                        <div class="row">
+                            <div class="docStrange">
+                                <h1>Doctor Strange</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="spidermanDisplay">
+                        <div class="row" >
+                            <div class="spiderman">
+                                <h1>SpiderMan</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="thorDisplay">
+                        <div class="row">
+                            <div class="thor">
+                                <h1>Thor</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="blackPantherDisplay">
+                        <div class="row">
+                            <div class="blackPanther">
+                                <h1>Black Panther</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="newDisplay">
+                        <div class="row">
+                            <div class="newContact">
+                                <h1>Newest</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <h3>Add New Contact</h3>
+                        <p>Click "Add" before clicking "Newest" to display contact.</p>
+                        <form id='form1'>
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id='lastName'>
+                            <label for="phone">Phone</label>
+                            <input type="text" id="phone">
+                            <label for="email">Email</label>
+                            <input type="email" id='email'>
+                            <button type="button" id="addButton">Add</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <h2>Kendall Roberts</h2>
+        <p>Address Book</p>
+    </footer>
+    <script src='contacts.js'></script>
+
+</body>
+
+</html>

@@ -18,6 +18,7 @@ var myTimer = setInterval(aFunction, 5000);
 
 document.getElementById("stop").addEventListener('click', function(){
     clearInterval(myTimer);
+    console.log('dsfjl');
 })
 
 /**Arrays */
@@ -46,6 +47,7 @@ myDiv.innerHTML = myString;
 
 document.getElementById('getIt').addEventListener('click', function(){
     alert(document.getElementById('movie').value);
+    console.log('dsfjl');
 })
 //add to the array
 //movies.push("Jumanji");

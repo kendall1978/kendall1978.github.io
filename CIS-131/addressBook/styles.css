@@ -1,0 +1,86 @@
+/*Kendall Roberts
+CIS-131
+Address Book
+10/13/2019*/
+
+
+img{
+    height: 500px;
+    width: auto;
+}
+div#contacts img{
+    height: auto;
+    width: 325px;
+}
+
+.row{
+    padding-top:10px ;
+    padding-left: 50px;
+}
+
+.myContain{
+    text-align: center;
+    border: 25px solid black;
+    border-radius: 10px;
+    padding: 25px 50px 75px 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+.ironMan{
+    border-left: 3px solid rgb(184, 0, 0);
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(247, 137, 137);
+    opacity: 1.0;
+}
+
+.docStrange{
+    border-left: 3px solid rgb(13, 95, 2);
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(140, 255, 150);
+    opacity: 1.0;
+}
+
+.spiderman{
+    border-left: 3px solid rgb(77, 0, 0);
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(160, 79, 112);
+    opacity: 1.0;
+}
+
+.thor{
+    border-left: 3px solid rgb(29, 127, 255);
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(80, 162, 165);
+    opacity: 1.0;
+}
+
+.blackPanther{
+    border-left: 3px solid black;
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(99, 99, 99);
+    opacity: 1.0;
+}
+
+.capAmerica{
+    border-left: 3px solid rgb(2, 0, 90);
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(44, 68, 121);
+    opacity: 1.0;
+}
+.newContact{
+    border-left: 3px solid rgb(90, 0, 90);
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(134, 115, 139);
+    opacity: 1.0;
+}
+footer{
+    background-color: rgb(54, 55, 56);
+    opacity: 1.0;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
