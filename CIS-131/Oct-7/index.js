@@ -14,7 +14,7 @@ order2 = new Order("Game", 1, 15.99);
 var anyOrders = [order1, order2];
 console.log(anyOrders);
 
-for(var i=0; i < anyOrders.length; i++){
+for(var i = 0; i < anyOrders.length; i++){
     console.log(anyOrders[i]);
 };
 

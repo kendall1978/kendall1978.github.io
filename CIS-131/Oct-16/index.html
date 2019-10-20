@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="movieTitle"></div>
+    <div id="description"></div>
+    <div id="nowPlaying"></div>
+    <script>
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.open('get', "https://api.themoviedb.org/3/movie/now_playing?api_key=065ba404968cd2bb5916e5ae06e33fcb&language=en-US&page=1");
+        httpRequest.send(null);
+        httpRequest.onreadystatechange = aFunction;
+        function aFunction(){
+            if(httpRequest.readyState == 4 && httpRequest.status == 200){
+                var movies = httpRequest.responseText;
+                // console.log(movies);
+                var jsObject = JSON.parse(movies);
+                console.log(jsObject.results[3].overview);
+                console.log(jsObject.results.length);
+                for(var i = 0; i < jsObject.results.length; i++){
+                    document.getElementById('nowPlaying').innerHTML += 
+                    `<section><h1>${jsObject.results[i].title}</h1><p>
+                        ${jsObject.results[i].overview}</p></section>`;
+                }
+            }
+        }
+    </script>
+    <script src="myajax.js"></script>
+</body>
+</html>

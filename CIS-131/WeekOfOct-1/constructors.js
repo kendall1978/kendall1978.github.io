@@ -32,6 +32,10 @@ player1.newWeapon("Sword");
 console.log(player1.displayChar());
 const player2 = new charObject(item, "Sheild", 85);
 console.log(player2.charName.name)
+
+objectArry= [player1,player2];
+
+console.log(objectArry[)
 /*** Constructor Methods */
 function order(item,qty, price, purchaseDate){
     this.orderItem = item;
