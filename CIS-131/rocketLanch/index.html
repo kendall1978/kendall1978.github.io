@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Rocket Launches</title>
 </head>
+
 <body>
-    <header>
+    <div class="pageTitle">
         <h1>Rocket Launches Coming Soon</h1>
-    </header>
+    </div>
     <div id="launchDisplay"></div>
+    <div id='timer'></div>
+    <div class='buttons'>
+        <button type="button" id='nextFive'>Next Five</button>
+        <button type="button" id='falconButton'>Falcon</button>
+        <button type="button" id='arianeButton'>Ariene</button>
+        <button type="button" id='launcherOneButton'>Launcher One</button>
+    </div>
     <script src="rocket.js"></script>
 </body>
+
 </html>

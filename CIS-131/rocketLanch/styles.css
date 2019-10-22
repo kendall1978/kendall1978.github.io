@@ -1,0 +1,56 @@
+/*Kendall Roberts
+CIS-131
+Rocket Launches
+10/22/2019*/
+
+.buttons{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(23, 0, 36); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.pageTitle{
+    border: 3px solid rgb(37, 0, 46);
+    font-family: 'Arvo', serif;
+    border-radius: 2px;
+    background-color: rgb(120, 80, 156);
+    width: 60%;
+    margin-left: 20%
+    
+    
+}
+.pageTitle h1{
+    text-align: center;
+    font-family: 'Arvo', serif;
+}
+#launchDisplay{
+    border: 3px solid rgb(37, 0, 46);
+    border-radius: 2px;
+    background-color: rgb(120, 80, 156);
+    opacity: 1.0;
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#launchDisplay section{ 
+    text-align: center;
+    
+}
+
+#launchDisplay h3{
+    padding: 10px 25px 10px 25px;
+    
+}
