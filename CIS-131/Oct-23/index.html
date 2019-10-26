@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <h1>My new Vue Stuff</h1>
+    <div id='app'>
+            {{message}}
+            <input v-model='message'>
+            <button @click="changeMessage(tooKool)">New Message</button>
+            <ul>
+                <li v-on:click='changeMessage(todo)' v-for='todo in todos'>{{todo}}</li>
+            </ul>
+            <button v-on:click="addItem">Add Item</button>
+            <hr>
+            <button v-on:click= "increments">Increment my Clicks</button>
+            <p v-show="clicks > 0">Number of Clicks: {{clicks}}</p>
+            <p v-show="clicks > 0">Number of Clicks: {{clicks5}}</p>
+            <button v-on:click= "decrements">Decrement my Clicks</button>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: "Hello",
+                todos: ["Learn Html", 'Learn CSS', 'Learn Js', 'Learn Vue'],
+                clicks: 0,
+                clicks5: 0
+            },
+            methods:{
+                changeMessage(theMess){
+                    this.message = theMess;
+
+                },
+                addItem(){
+                    this.todos.push(this.message)
+                },
+                increments(){
+                    this.clicks++
+                    this.clicks5= this.clicks + 5
+                },
+                decrements(){
+                    this.clicks--;
+                    this.clicks5 = this.clicks - 5;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

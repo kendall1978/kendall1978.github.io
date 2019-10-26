@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for='item in items'>{{item.name}} {{item.price}}
+                    <button v-on:click="orderItem(item)">Order {{item.name}}</button>
+            </li>
+            
+        </ul>
+        <div>
+            <p>Cart Total: {{cartItem}}</p>
+        </div>
+        <div>
+            <p v-for='item in items'>{{item.name}} {{item.ordered}}</p>
+        </div>
+    </div>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data:{
+                items:[
+                    {name:"movie1", ordered: 0, price:19.99},
+                    {name:'movie2', ordered: 0, price:19.99}
+                ],
+                cartItem: 0
+            },
+            methods:{
+                orderItem(theObj){
+                    this.cartItem++;
+                    theObj.ordered++;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

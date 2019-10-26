@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        img{
+            height: 200px;
+            width: auto;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"><h4>{{mess}}</h4>
+        {{items[0].name}}
+        <p>Cart Items: {{cartItem}}</p>
+        <div v-for='item in items'>
+            <p>{{item.name}}</p>
+            <img v-bind:src='item.imgSrc' alt='item.name'>
+            <p>{{item.ordered}}</p>
+            <button v-on:click="orderThis(item)">Order {{item.name}}</button>
+            <button v-on:click='removeThis(item)'>Order {{item.name}}</button>
+        </div>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data:{
+                mess:"Aloha",
+                items:[
+                    {name:'Dexter', ordered: 0, imgSrc:'dexter.png'},
+                    {name:"Johnny", ordered: 0, imgSrc:'johnny.webp'}
+            ],
+            cartItem: 0
+            },
+            methods:{
+                orderThis(theObj){
+                    this.cartItem++;
+                    theObj.ordered++;
+                },
+                removeThis(theObj){
+                    this.cartItem--;
+                    theObj.ordered--;
+                }
+        }
+        })
+    </script>
+</body>
+</html>
