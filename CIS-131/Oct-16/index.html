@@ -14,7 +14,6 @@
         var httpRequest = new XMLHttpRequest();
         httpRequest.open('get', "https://api.themoviedb.org/3/movie/now_playing?api_key=065ba404968cd2bb5916e5ae06e33fcb&language=en-US&page=1");
         httpRequest.send(null);
-        httpRequest.onreadystatechange = aFunction;
         function aFunction(){
             if(httpRequest.readyState == 4 && httpRequest.status == 200){
                 var movies = httpRequest.responseText;

@@ -1,4 +1,4 @@
-var obj = {
+Svar obj = {
     movie: 'Hawaii 5-0',
     budget: 63000000,
     generas:{
