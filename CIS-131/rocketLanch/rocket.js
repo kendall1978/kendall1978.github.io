@@ -16,6 +16,7 @@ function nextFiveFunction() {
     if (launchesRequest.readyState == 4 && launchesRequest.status == 200) {
         var nextLaunch = launchesRequest.responseText;
         var jsLaunch = JSON.parse(nextLaunch);
+        console.log(jsLaunch);
         var nextFiveArray = [jsLaunch.launches[0], jsLaunch.launches[1],
         jsLaunch.launches[2], jsLaunch.launches[3], jsLaunch.launches[4]];
         var countDownToLaunch = new Date(nextFiveArray[0].net).getTime();
