@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(() => {
+            $.ajax({
+                url: 'https://api.themoviedb.org/3/movie/now_playing?api_key=065ba404968cd2bb5916e5ae06e33fcb&language=en-US&page=1',
+                success: (result) => {
+                    //$('#0').text(result.results[0].title);
+                    for(var i = 0; i < result.results.length; i++){
+                        document.getElementById('movies').innerHTML += 
+                        `<h1 id='${i}'>${result.results[i].title}</h1>
+                        <p id='${i}'>${result.results[i].overview}</p>`
+                    }
+
+                    $(document).delegate('h1', 'click', (event) => {
+                        var theID = '#' + event.target.id;
+                        
+                        $('p').toggle(3000);
+                    })
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <section id='movies'></section>
+</body>
+
+</html>

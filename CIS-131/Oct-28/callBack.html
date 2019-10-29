@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Callback</title>
+    <script>
+        $(document).ready( () =>{
+            $('#hide').click( () =>{
+                $('p').hide(3000, () =>{
+                    alert("I will hide the paragraph")
+                });
+            })
+        })
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nostrum laudantium numquam voluptatem error. Temporibus itaque alias, omnis et numquam fugit delectus facere unde est exercitationem, veniam, in harum id!</p>
+    <button id='hide'>Hide the paragraph</button>
+</body>
+</html>
