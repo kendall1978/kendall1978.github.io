@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
@@ -12,12 +13,27 @@
 
 <body>
     <div id="app">
-        <div v-for='item in items'>
-                <img v-bind:src='item.imgSrc' alt='item.name'>
-                <p>{{item.name}}</p>
-                <p>In Stock: {{item.inStock}}</p>
-                <p>Price: {{item.price}}</p>
-                <button v-on:click='orderItem(item)'>Add to Cart</button>
+        <div class="contain" v-for='item in items'>
+            <img v-bind:src='item.imgSrc' alt='item.name'>
+            <h2>{{item.name}}</h2>
+            <p>{{item.overView}}</p>
+            <p v-if="item.inStock > 0">In Stock: {{item.inStock}}</p>
+            <p v-if="item.inStock <=0">Item out of stock</p>
+            <p>Price: {{item.price}}</p>
+            <button v-on:click="orderItem(item)">Add to Cart</button>
+        </div>
+        <div v-if='cartItem > 0'>
+            <div>
+                <ul>
+                    <li v-if="items[0].ordered > 0"><h1>Item Name: {{items[0].name}} 
+                        Quantity: {{items[0].ordered}} Price: ${{items[0].price}}</h1><button type = 'button' v-on:click="unSelectItem(items[0])">X</button></li>
+                    <li v-if="items[1].ordered > 0"><h1>{{items[1].name}} 
+                        Quantity: {{items[1].ordered}} Price: ${{items[1].price}}</h1><button type = 'button' v-on:click="unSelectItem(items[1])">X</button></li>
+                    <li v-if="items[2].ordered > 0"><h1>{{items[2].name}}
+                        Quantity: {{items[2].ordered}} Price: ${{items[2].price}}</h1><button type = 'button' v-on:click="unSelectItem(items[2])">X</button></li>
+                    <li><h1 v-show="total > 0">Sub Total =  {{total}}</h1></li>
+                </ul>
+            </div>
         </div>
     </div>
     <script>
@@ -25,35 +41,47 @@
             el: "#app",
             data: {
                 cartItem: 0,
-                methods:{
-                    orderItem(theObj){
-                        this.cartItem++;
-                        theObj.ordered++;
-                        theObj.inStock--;
-                    }
-                },
+                total: 0,
                 items: [{
                         name: 'Gibson Les Paul',
                         ordered: 0,
                         imgSrc: 'gibson.jpg',
-                        price: 5,
-                        inStock: 3
+                        price: 150,
+                        inStock: 3,
+                        overView: 'A guitar with a solid wholesome sound for those power riffs!'
                     },
                     {
                         name: 'Fender Stratocaster',
                         ordered: 0,
                         imgSrc: 'strat.png',
-                        price: 5,
-                        inStock: 3
+                        price: 150,
+                        inStock: 3,
+                        overView: 'The guitar for those rich deep solos we all love!'
                     },
                     {
                         name: 'Fender Telecaster',
                         ordered: 0,
                         imgSrc: 'tele.png',
-                        price: 5,
-                        inStock: 3
+                        price: 150,
+                        inStock: 3,
+                        overView: 'This guitar will give you that blues and roll sound you know you love!'
                     }
                 ]
+
+            },
+            methods: {
+                orderItem(theObj) {
+                    this.cartItem++;
+                    theObj.ordered++;
+                    theObj.inStock--;
+                    this.total = (this.cartItem * theObj.price);
+                },
+                unSelectItem(theObj){
+                    this.cartItem--;
+                    theObj.ordered--;
+                    theObj.inStock++;
+
+                }
             }
         })
     </script>
