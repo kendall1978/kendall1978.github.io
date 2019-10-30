@@ -25,12 +25,12 @@
         <div v-if='cartItem > 0'>
             <div>
                 <ul>
-                    <li v-if="items[0].ordered > 0"><h1>Item Name: {{items[0].name}} 
-                        Quantity: {{items[0].ordered}} Price: ${{items[0].price}}</h1><button type = 'button' v-on:click="unSelectItem(items[0])">X</button></li>
-                    <li v-if="items[1].ordered > 0"><h1>{{items[1].name}} 
-                        Quantity: {{items[1].ordered}} Price: ${{items[1].price}}</h1><button type = 'button' v-on:click="unSelectItem(items[1])">X</button></li>
-                    <li v-if="items[2].ordered > 0"><h1>{{items[2].name}}
-                        Quantity: {{items[2].ordered}} Price: ${{items[2].price}}</h1><button type = 'button' v-on:click="unSelectItem(items[2])">X</button></li>
+                    <li v-if="items[0].ordered > 0"><h1>Item Name: {{items[0].name}}</h1> 
+                        <h2> Quantity: {{items[0].ordered}} Price: ${{items[0].price}}  <button type = 'button' v-on:click="unSelectItem(items[0])">X</button></h2></li>
+                    <li v-if="items[1].ordered > 0"><h1>{{items[1].name}} </h1>
+                       <h2> Quantity: {{items[1].ordered}} Price: ${{items[1].price}}  <button type = 'button' v-on:click="unSelectItem(items[1])">X</button></h2></li>
+                    <li v-if="items[2].ordered > 0"><h1>{{items[2].name}}</h1>
+                     <h2> Quantity: {{items[2].ordered}} Price: ${{items[2].price}}  <button type = 'button' v-on:click="unSelectItem(items[2])">X</button></h2></li>
                     <li><h1 v-show="total > 0">Sub Total =  {{total}}</h1></li>
                 </ul>
             </div>
@@ -46,7 +46,7 @@
                         name: 'Gibson Les Paul',
                         ordered: 0,
                         imgSrc: 'gibson.jpg',
-                        price: 150,
+                        price: 299.99,
                         inStock: 3,
                         overView: 'A guitar with a solid wholesome sound for those power riffs!'
                     },
@@ -54,7 +54,7 @@
                         name: 'Fender Stratocaster',
                         ordered: 0,
                         imgSrc: 'strat.png',
-                        price: 150,
+                        price: 299.99,
                         inStock: 3,
                         overView: 'The guitar for those rich deep solos we all love!'
                     },
@@ -62,7 +62,7 @@
                         name: 'Fender Telecaster',
                         ordered: 0,
                         imgSrc: 'tele.png',
-                        price: 150,
+                        price: 299.99,
                         inStock: 3,
                         overView: 'This guitar will give you that blues and roll sound you know you love!'
                     }
@@ -80,6 +80,7 @@
                     this.cartItem--;
                     theObj.ordered--;
                     theObj.inStock++;
+                    this.total = this.cartItem * theObj.price;
 
                 }
             }

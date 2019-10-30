@@ -3,6 +3,9 @@ CIS-131
 Vue Guitars
 10/26/2019*/
 
+body{
+    background-color: rgb(139,69,19);
+}
 img{
     height: 300px;
     width: auto;
@@ -13,14 +16,16 @@ img{
     border: 3px solid rgb(37, 0, 46);
     margin: 22px 22px 22px 22px;
     text-align: center;
+    background-color: white;
 }
 p{
-    font-size: 12pt;
+    font-size: 14pt;
     font-family: 'Indie Flower', cursive; 
 }
 
 h1{
     font-family: 'Indie Flower', cursive;
+    padding: 7px 7px 7px 7px;
 }
 
 ul{
@@ -28,6 +33,30 @@ ul{
 }
 
 .contain p{
-    padding: 10px 10px 10px 10px;
+    padding: 7px 7px 7px 7px;
 }
 
+.contain button{
+    padding: 7px 7px 7px 7px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: black;
+    background-color: rgb(139, 69, 19);
+    border: 3px solid rgb(37, 0, 46);
+    border-radius: 3px;
+}
+
+button{
+    padding: 7px 7px 7px 7px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(37, 0, 46);
+    border-radius: 3px;
+}
+
+div#app{
+    
+    margin-left: 10%;
+}
