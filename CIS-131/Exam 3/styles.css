@@ -1,0 +1,30 @@
+/* 
+Kendall Roberts
+Exam 3 Extra Credit project
+11/8/2019
+*/
+
+.card{
+    height: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    
+
+}
+.row{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: auto;
+    background-color: #fff;
+    color: #000;
+    font-display: auto;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 1em;
+}
