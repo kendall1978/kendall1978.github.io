@@ -1,13 +1,27 @@
 var tvShows = [];
+var reviews = [];
 $(document).ready(() => {
     $.ajax({
         url:'https://api.themoviedb.org/3/tv/popular?api_key=065ba404968cd2bb5916e5ae06e33fcb&language=en-US&page=1',
         success: (result) =>{
             tvShows.push(result.results[0], result.results[1], result.results[2]);
             console.log(result);
+
         }
     })
 })
+
+$(document).ready(() => {
+    $.ajax({
+        url:'https://api.themoviedb.org/3/tv/{tv_id}/reviews?api_key=065ba404968cd2bb5916e5ae06e33fcb&language=en-US&page=1',
+        success: (result) =>{
+            reviews.push(result.results[0], result.results[1], result.results[2])
+            console.log(result);
+        }
+    })
+})
+
+
 
 Vue.component('popular-list',{
     props:['theshows'],
@@ -22,6 +36,7 @@ Vue.component('popular-list',{
                     <p>{{item.vote_average}}</p>
                     <p>{{item.first_air_date}}</p>
                     <p>{{item.overview}}</p>
+                    <button v-on:click="reviewDisplay(item)">More Info</button>
                 </div>
                 </div>
             </div>
@@ -32,7 +47,16 @@ Vue.component('popular-list',{
 var app = new Vue({
     el:'#app',
     data:{
-        shows: tvShows
+        shows: tvShows,
+        showReviews: reviews
+    },
+    methods:{
+        reviewDisplay(theReview){
+            if(showReviews.id == theReview.id){
+                var aReview = document.createElement("p");
+                aReview.appendChild(showReviews.content);
+            }
+        }
     }
 })
 
