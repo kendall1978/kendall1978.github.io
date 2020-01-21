@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    height: 10%;
+    background: white;
+    position: relative;
+    display: flex;
+}
+
+.navbar-brand{
+    color: #4F5D75;
+    width: 10%;
+    display: flex;
+    padding: 1rem;
+
+}
+
+
+.content {
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2rem;
+    -webkit-box-shadow: 0px 8px 40px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 8px 40px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 8px 40px -15px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    background: #BFC0C0;
+
+
+}
+
+form div{
+    padding: 1rem;
+}
+
+
+
+
+.line {
+    width: 30px;
+    height: 3px;
+    background: wheat;
+    margin: 5px;
+}
+
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 300;
+}
+
+.name{
+    z-index: 1000;
+}
+
+.myNav-links {
+    position: fixed;
+    background: rgb(78, 1, 65);
+    height: 100vh;
+    width: 100vw;
+    padding-left: 45%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -15%);
+    -webkit-clip-path: circle(100px at 90% -15%);
+    -moz-clip-path: circle(100px at 90% -15%);
+    transition: all 700ms ease-in-out;
+    pointer-events: none;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.myNav-links.open {
+    clip-path: circle(850px at 85% -15% );
+    -webkit-clip-path: circle(850px at 85%  -15%);
+    -moz-clip-path: circle(850px at 85%  -15%);
+    pointer-events: all;
+    z-index: 299;
+}
+
+.myNav-links li {
+    opacity: 0;
+}
+
+.myNav-links li a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.myNav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+}
+
+.myNav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+}
+
+.myNav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+}
+
+.myNav-links li.fade {
+    opacity: 1;
+}
+
+/* @media screen and (max-width: 1000px){
+
+    .myNav-links.open{
+        clip-path: circle(350px at 60%  -10%);
+        -webkit-clip-path: circle(350px at 60% -10%);
+        -moz-clip-path: circle(350px at 60% -10% ); 
+    }
+} */
